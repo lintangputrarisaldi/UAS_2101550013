@@ -9,6 +9,7 @@
 3. Postman
 
 ### 2. Membuat Database
+```sql
 CREATE TABLE vehicles (
     id INT AUTO_INCREMENT PRIMARY KEY,
     brand text(15) NOT NULL,
@@ -20,11 +21,11 @@ CREATE TABLE vehicles (
 INSERT INTO vehicles (id,brand,model,year,price) VALUES
 (‘1’,’Kawasaki’,’Ninja SS’,’2015’,’28000000’),
 (‘2,Yamaha,’Rx-King’,’2004’,’20000000’);
-
+```
 ### 3. 	Membuat File Di File C
 Membuat folder di dalam C-Xampp-Htdock- vehicles.php
 Program yang ada pada vehicles.php
-
+```php
 <?php
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Origin: *");
@@ -138,14 +139,14 @@ switch ($method) {
         break;
 }
 ?>
-
+```
 ### 4.	Hasil untuk menampilkan seluruh data
-GET -> http://localhost/vehicles/vehicles.php
+GET -> `http://localhost/vehicles/vehicles.php`
 ### 5. Hasil untuk menampilkan mengambil 1 data
-GET -> http://localhost/vehicles/vehicles.php/1
+GET -> `http://localhost/vehicles/vehicles.php/1`
 ### 6. Hasil Untuk POST
-POST -> http://localhost/vehicles/vehicles.php
+POST -> `http://localhost/vehicles/vehicles.php`
 ### 7. Hasil untuk PUT
-PUT -> http://localhost/vehicles/vehicles.php
+PUT -> `http://localhost/vehicles/vehicles.php`
 ### 8. Hasil untuk delete
-DELETE -> http://localhost/vehicles/vehicles.php
+DELETE -> `http://localhost/vehicles/vehicles.php`
