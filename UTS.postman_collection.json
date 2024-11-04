@@ -1,0 +1,507 @@
+{
+	"info": {
+		"_postman_id": "bc29c589-62dc-467d-b39e-10927e906fb5",
+		"name": "UTS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39156262"
+	},
+	"item": [
+		{
+			"name": "http://localhost/vehicles/vehicles.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/vehicles/vehicles.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"vehicles",
+						"vehicles.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/vehicles/vehicles.php",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/vehicles/vehicles.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"vehicles",
+								"vehicles.php"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2024 04:41:28 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/7.4.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, modelization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "150"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"brand\": \"Kawasaki\",\n        \"model\": \"Ninja SS\",\n        \"year\": 2025,\n        \"price\": 28000000\n    },\n    {\n        \"id\": 2,\n        \"brand\": \"Yamaha\",\n        \"model\": \"Rx-King\",\n        \"year\": 2004,\n        \"price\": 20000000\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost/vehicles/vehicles.php",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"brand\": \"honda\",\r\n        \"model\": \"gl\",\r\n        \"year\": 2004,\r\n        \"price\": 10000000\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/vehicles/vehicles.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"vehicles",
+						"vehicles.php"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/vehicles/vehicles.php",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"brand\": \"honda\",\r\n        \"model\": \"gl\",\r\n        \"year\": 2004,\r\n        \"price\": 10000000\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/vehicles/vehicles.php",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"vehicles",
+								"vehicles.php"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2024 04:45:52 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/7.4.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, modelization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"vehicles created\",\n    \"id\": \"0\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost/vehicles/vehicles.php?Content-Type= application/json",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"brand\": \"honda\",\r\n    \"model\": \"gl\",\r\n    \"year\": \"2004\",\r\n    \"price\": \"10000000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/vehicles/vehicles.php?Content-Type= application/json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"vehicles",
+						"vehicles.php"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": " application/json"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/vehicles/vehicles.php?Content-Type= application/json",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand\": \"honda\",\r\n    \"model\": \"gl\",\r\n    \"year\": \"2004\",\r\n    \"price\": \"10000000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/vehicles/vehicles.php/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"vehicles",
+								"vehicles.php",
+								"1"
+							],
+							"query": [
+								{
+									"key": "Content-Type",
+									"value": " application/json",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2024 04:52:07 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/7.4.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, modelization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"vehicles updated\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost/vehicles/vehicles.php/0",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/vehicles/vehicles.php/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"vehicles",
+						"vehicles.php",
+						"0"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/vehicles/vehicles.php/0",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/vehicles/vehicles.php/0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"vehicles",
+								"vehicles.php",
+								"0"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2024 04:50:31 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/7.4.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, modelization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"vehicles deleted\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost/vehicles/vehicles.php/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/vehicles/vehicles.php/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"vehicles",
+						"vehicles.php",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost/vehicles/vehicles.php/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/vehicles/vehicles.php/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"vehicles",
+								"vehicles.php",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 04 Nov 2024 04:54:21 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/7.4.12"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.12"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, PUT, DELETE"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, Access-Control-Allow-Headers, modelization, X-Requested-With"
+						},
+						{
+							"key": "Content-Length",
+							"value": "66"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"brand\": \"honda\",\n    \"model\": \"gl\",\n    \"year\": 2004,\n    \"price\": 10000000\n}"
+				}
+			]
+		}
+	]
+}
