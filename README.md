@@ -22,6 +22,7 @@ INSERT INTO vehicles (id,brand,model,year,price) VALUES
 (‘1’,’Kawasaki’,’Ninja SS’,’2015’,’28000000’),
 (‘2,Yamaha,’Rx-King’,’2004’,’20000000’);
 ```
+
 ### 3. 	Membuat File Di File C
 Membuat folder di dalam C-Xampp-Htdock- vehicles.php
 Program yang ada pada vehicles.php
