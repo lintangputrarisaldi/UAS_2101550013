@@ -1,5 +1,4 @@
-# Index
-```php
+## Index
         <?php
         session_start();
         
